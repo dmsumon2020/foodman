@@ -61,7 +61,7 @@ Visit the live website: [FoodMAN Restaurant SPA](https://comfy-travesseiro-549a4
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/restaurant-management.git
+   git clone https://github.com/dmsumon2020/foodman.git
    cd restaurant-management
    ```
 
