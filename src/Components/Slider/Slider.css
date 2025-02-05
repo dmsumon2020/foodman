@@ -1,0 +1,23 @@
+.swiper-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+  opacity: 100%;
+  border: 4px solid #fff;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+.swiper-pagination-bullet-active {
+  border: 4px solid #c79c60;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #fff;
+}

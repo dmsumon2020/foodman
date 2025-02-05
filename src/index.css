@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sub-heading {
+  font-family: "Great Vibes", serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #c79c60;
+  padding-top: 40px;
+  padding-bottom: 8px;
+}
+.heading {
+  font-family: "Cormorant Garamond", Sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #111111;
+  padding-bottom: 4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", Sans-serif;
+}
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #777777;
+}
+.scroll-menu {
+  margin-top: 0;
+}
+
+/* 
+ *for sweet alert dark mode theme
+ */
+.dark .swal2-popup {
+  background-color: #1f2937;
+}
+.dark .swal2-title,
+.dark .swal2-html-container {
+  color: #fff;
+}
