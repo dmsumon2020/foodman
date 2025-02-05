@@ -90,7 +90,7 @@ Visit the live website: [FoodMAN Restaurant SPA](https://comfy-travesseiro-549a4
 
 ## Screenshots
 
-_(Add relevant screenshots here to showcase the project visually)_
+![Banner](https://i.ibb.co.com/r2zy1ntM/food-man.png)
 
 ## Live Links & Resources
 
