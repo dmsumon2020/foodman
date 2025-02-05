@@ -33,16 +33,21 @@ Visit the live website: [FoodMAN Restaurant SPA](https://comfy-travesseiro-549a4
 
 ## Dependencies Used
 
-- React.js
-- React Router
-- Firebase Authentication
-- Tailwind CSS
-- Express.js
-- MongoDB
-- JWT (jsonwebtoken)
-- Moment.js (for date formatting)
-- React Lightbox (for image previews)
-- Toast/Sweet Alert (for notifications)
+- **axios**: To make HTTP requests to the backend.
+- **firebase**: For user authentication and storing user data.
+- **lottie-react**: For adding animations.
+- **moment**: For formatting and displaying dates and times.
+- **react**: Core JavaScript library for building user interfaces.
+- **react-dom**: For rendering React components into the DOM.
+- **react-helmet-async**: For managing the document head (e.g., titles and meta tags) dynamically.
+- **react-icons**: To use icons in the user interface.
+- **react-router**: For navigation and routing.
+- **react-router-dom**: For handling routing in a web environment.
+- **sweetalert2**: For displaying elegant and interactive alerts.
+- **swiper**: For creating swiping galleries and sliders.
+- **yet-another-react-lightbox**: For displaying images in a lightbox.
+
+---
 
 ## Setup & Installation
 
