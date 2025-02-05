@@ -94,10 +94,9 @@ _(Add relevant screenshots here to showcase the project visually)_
 
 ## Live Links & Resources
 
-- **Live Site:** [Link](#)
-- **Frontend Repo:** [GitHub](#)
-- **Backend Repo:** [GitHub](#)
-- **API Documentation:** [Link](#) _(If available)_
+- **Live Site:** [Link](https://comfy-travesseiro-549a4f.netlify.app)
+- **Frontend Repo:** [GitHub](https://github.com/dmsumon2020/foodman)
+- **Backend Repo:** [GitHub](https://github.com/programming-hero-web-course2/b10a11-server-side-dmsumon2020)
 
 ---
 
