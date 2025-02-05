@@ -2,11 +2,15 @@
 
 ## Description
 
-This is a full-stack restaurant management web application built using the MERN stack. It provides an intuitive platform for customers to browse, purchase, and manage food items while streamlining internal management processes for restaurant staff.
+Welcome to **FoodMAN Restaurant SPA**! This is a single-page web application (SPA) that allows users to log in, add food items, view the details of food items added by other users, update their own items, and manage their orders. Users can also delete their own orders but cannot buy their own food items.
 
-### Live Project Link
+This project uses **Express** for the backend and **ReactJS** for the frontend. It is designed to provide a smooth user experience and a modern interface with real-time interaction.
 
-[Live Demo](#) _(Replace with actual URL)_
+### Live Demo
+
+Visit the live website: [FoodMAN Restaurant SPA](https://comfy-travesseiro-549a4f.netlify.app)
+
+---
 
 ### Technologies Used
 
