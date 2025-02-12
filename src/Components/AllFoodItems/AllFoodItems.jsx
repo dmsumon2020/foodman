@@ -85,7 +85,7 @@ const AllFoodItems = ({ isHomepage }) => {
 
                   {/* Add View Details button */}
                   <Link to={`/food/${item._id}`}>
-                    <button className="view-details-button text-white text-[20px] border border-white px-2 py-1 md:px-4 md:py-2 mt-1 md:mt-3 font-bold transition-all duration-300 hover:bg-white hover:text-black">
+                    <button className="px-12 py-3 inline-block rounded-[5px] text-white bg-transparent border border-white transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-black mt-1 md:mt-3">
                       View Details
                     </button>
                   </Link>
