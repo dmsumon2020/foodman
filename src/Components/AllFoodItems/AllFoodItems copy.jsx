@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import axios from "axios";
+import { Link } from "react-router";
 import useAxiosNonSecure from "../../Hooks/useAxiosNonSecure";
 import PageTitle from "../TemplateParts/PageTitle/PageTitle";
 import LottieLoader from "../LottieLoader/LottieLoader";
@@ -7,37 +8,28 @@ import LottieLoader from "../LottieLoader/LottieLoader";
 const AllFoodItems = ({ isHomepage }) => {
   const [foodItems, setFoodItems] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [sortOrder, setSortOrder] = useState(""); // Sorting state
+  const [loading, setLoading] = useState(true); // Adding loading state
 
   const axiosNonSecure = useAxiosNonSecure();
 
   useEffect(() => {
+    // Fetch food items from the backend
     const fetchFoodItems = async () => {
       try {
-        setLoading(true);
+        setLoading(true); // Set loading to true when the fetch starts
         const response = await axiosNonSecure.get("/foods", {
           params: { homepage: isHomepage, search: searchTerm },
         });
-        let sortedData = response.data;
-
-        // Apply sorting
-        if (sortOrder === "asc") {
-          sortedData = sortedData.sort((a, b) => a.price - b.price);
-        } else if (sortOrder === "desc") {
-          sortedData = sortedData.sort((a, b) => b.price - a.price);
-        }
-
-        setFoodItems(sortedData);
+        setFoodItems(response.data);
       } catch (error) {
         console.error("Error fetching food items:", error);
       } finally {
-        setLoading(false);
+        setLoading(false); // Set loading to false when the fetch is done
       }
     };
 
     fetchFoodItems();
-  }, [isHomepage, searchTerm, sortOrder]);
+  }, [isHomepage, searchTerm]);
 
   return (
     <>
@@ -51,28 +43,20 @@ const AllFoodItems = ({ isHomepage }) => {
             <h3 className="heading dark:text-white">All Food Items</h3>
           )}
         </div>
-
+        {/* Add Search Input */}
         {!isHomepage && (
-          <div className="search-sort-container w-11/12 md:w-9/12 mx-auto my-6 flex justify-between">
+          <div className="search-container w-11/12 md:w-9/12 mx-auto my-6">
             <input
               type="text"
               placeholder="Search for food..."
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="search-input w-2/3 px-5 py-3 dark:bg-DarkModeBg dark:text-white"
+              onChange={(e) => setSearchTerm(e.target.value)} // Update search term state
+              className="search-input w-full px-5 py-5 dark:bg-DarkModeBg dark:text-white"
             />
-            <select
-              value={sortOrder}
-              onChange={(e) => setSortOrder(e.target.value)}
-              className="sort-dropdown w-1/3 px-5 py-3 dark:bg-DarkModeBg dark:text-white"
-            >
-              <option value="">Sort by</option>
-              <option value="asc">Price: Low to High</option>
-              <option value="desc">Price: High to Low</option>
-            </select>
           </div>
         )}
 
+        {/* Show loading spinner while fetching data */}
         {loading ? (
           <div className="loading-spinner text-center">
             <LottieLoader />
@@ -98,6 +82,8 @@ const AllFoodItems = ({ isHomepage }) => {
                   <p className="text-white md:text-[20px] py-1">
                     Sold Times: {item.purchaseCount}
                   </p>
+
+                  {/* Add View Details button */}
                   <Link to={`/food/${item._id}`}>
                     <button className="px-12 py-3 inline-block rounded-[5px] text-white bg-transparent border border-white transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-black mt-1 md:mt-3">
                       View Details
@@ -113,7 +99,7 @@ const AllFoodItems = ({ isHomepage }) => {
           <div className="view-all-foods w-11/12 md:w-9/12 mx-auto text-center mt-10">
             <Link
               to="/all-foods"
-              className="px-12 py-3 inline-block rounded-[5px] text-primaryColor border border-primaryColor transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-white mt-1 md:mt-3"
+              className="px-12 py-3 inline-block rounded-[5px] text-primaryColor  border border-primaryColor transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-white mt-1 md:mt-3"
             >
               View All Foods
             </Link>
