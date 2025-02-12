@@ -97,12 +97,12 @@ const AllFoodItems = ({ isHomepage }) => {
 
         {isHomepage && (
           <div className="view-all-foods w-11/12 md:w-9/12 mx-auto text-center mt-10">
-            <Link
+            {/* <Link
               to="/all-foods"
               className="border border-primaryColor text-primaryColor px-6 py-3 font-bold text-base md:text-lg font-headingFont transition-bg duration-300 hover:bg-primaryColor hover:text-white"
             >
               View All Foods
-            </Link>
+            </Link> */}
             {/* <Link
               to="/all-foods"
               className="px-12 py-3 inline-block rounded-[5px] text-black bg-primaryColor border border-primaryColor transition-all duration-300 hover:border-white hover:bg-transparent hover:text-white"
