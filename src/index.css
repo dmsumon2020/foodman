@@ -56,3 +56,26 @@ body {
 .dark .swal2-html-container {
   color: #fff;
 }
+.swal2-actions button {
+  padding: 12px 48px;
+  display: inline-block;
+  border-radius: 5px;
+  color: #c79c60;
+  border: 1px solid #c79c60;
+  transition: all 0.3s ease-in-out;
+  margin-top: 4px;
+  font-weight: bold;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .swal2-loader button {
+    margin-top: 12px;
+  }
+}
+
+.swal2-actions button:hover {
+  background: #c79c60;
+  border-color: #c79c60;
+  color: white;
+}

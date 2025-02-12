@@ -94,7 +94,7 @@ const MyOrder = ({ purchase, handleRemovePurchase }) => {
 
         <button
           onClick={() => handleDeleteOrder(_id)}
-          className="view-details-button text-white text-[20px] border border-white px-4 py-2 mt-3 font-bold transition-all duration-300 hover:bg-white hover:text-black"
+          className="px-12 py-3 inline-block rounded-[5px] text-white bg-transparent border border-white transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-white mt-1 md:mt-3"
         >
           Delete
         </button>

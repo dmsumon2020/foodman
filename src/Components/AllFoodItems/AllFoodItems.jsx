@@ -113,7 +113,7 @@ const AllFoodItems = ({ isHomepage }) => {
           <div className="view-all-foods w-11/12 md:w-9/12 mx-auto text-center mt-10">
             <Link
               to="/all-foods"
-              className="px-12 py-3 inline-block rounded-[5px] text-primaryColor border border-primaryColor transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-white mt-1 md:mt-3"
+              className="px-12 py-3 inline-block rounded-[5px] text-primaryColor border border-primaryColor transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-white mt-1 md:mt-3 font-bold"
             >
               View All Foods
             </Link>

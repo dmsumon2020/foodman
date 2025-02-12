@@ -375,7 +375,7 @@ const UpdateFood = () => {
           <div className="flex justify-end mt-6">
             <button
               type="submit"
-              className="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-primaryColor rounded-md hover:bg-primaryColorHover focus:outline-none focus:bg-gray-600"
+              className="px-12 py-3 inline-block rounded-[5px] text-primaryColor border border-primaryColor transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-white mt-1 md:mt-3 font-bold"
             >
               Update Food Item
             </button>

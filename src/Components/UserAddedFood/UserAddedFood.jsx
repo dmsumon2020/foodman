@@ -21,7 +21,7 @@ const UserAddedFood = ({ food }) => {
 
         {/* Add View Details button */}
         <Link to={`/update-food/${_id}`}>
-          <button className="view-details-button text-white text-[20px] border border-white px-4 py-2 mt-3 font-bold transition-all duration-300 hover:bg-white hover:text-black">
+          <button className="px-12 py-3 inline-block rounded-[5px] text-white bg-transparent border border-white transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-white mt-1 md:mt-3">
             Update Food
           </button>
         </Link>
