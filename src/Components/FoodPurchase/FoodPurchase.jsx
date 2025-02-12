@@ -165,7 +165,7 @@ const FoodPurchase = () => {
               className="rounded-md shadow-md"
             />
           </div>
-          <aside className="md:w-2/3  rounded-md shadow-md">
+          <aside className="md:w-2/3  rounded-md">
             <p className="text-primaryColor font-bold text-[20px] md:text-[30px] mb-5 mt-5 md:mt-0 break-words">
               Available Quantity: {stockQuantity}
             </p>

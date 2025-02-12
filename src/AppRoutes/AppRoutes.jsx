@@ -14,6 +14,7 @@ import MyOrders from "../Components/MyOrders/MyOrders";
 import RecoverPassword from "../Components/RecoverPassword/RecoverPassword";
 import FoodPurchase from "../Components/FoodPurchase/FoodPurchase";
 import NotFound from "../Components/NotFound/NotFound";
+import BookTable from "../Components/BookTable/BookTable";
 
 const AppRoutes = () => {
   return (
@@ -153,6 +154,19 @@ const AppRoutes = () => {
           </PrivateRoute>
         }
       />
+
+      <Route
+        path="/book-table"
+        element={
+          <PrivateRoute>
+            <Helmet>
+              <title>Book a Table | Food Zone</title>
+            </Helmet>
+            <BookTable />
+          </PrivateRoute>
+        }
+      />
+
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

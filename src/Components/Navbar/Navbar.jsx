@@ -162,6 +162,41 @@ const Navbar = () => {
                   Registration
                 </NavLink>
               )}
+
+              {/* {user && (
+                <NavLink
+                  to={"/my-foods"}
+                  className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  My Foods
+                </NavLink>
+              )}
+
+              {user && (
+                <NavLink
+                  to={"/add-food"}
+                  className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  Add Foods
+                </NavLink>
+              )}
+              {user && (
+                <NavLink
+                  to={"/my-orders"}
+                  className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  My Orders
+                </NavLink>
+              )} */}
+
+              {user && (
+                <NavLink
+                  to={"/book-table"}
+                  className="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  Book a Table
+                </NavLink>
+              )}
             </div>
 
             <div className="hidden lg:flex items-center mt-4 lg:mt-0">

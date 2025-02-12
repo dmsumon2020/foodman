@@ -65,7 +65,7 @@ body {
   transition: all 0.3s ease-in-out;
   margin-top: 4px;
   font-weight: bold;
-  background: none;
+  background: none !important;
 }
 
 @media (min-width: 768px) {
@@ -75,7 +75,7 @@ body {
 }
 
 .swal2-actions button:hover {
-  background: #c79c60;
+  background: #c79c60 !important;
   border-color: #c79c60;
   color: white;
 }
