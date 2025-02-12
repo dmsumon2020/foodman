@@ -109,7 +109,7 @@ const FoodDetails = () => {
             <p className="dark:text-white">{foodItem.makingProcedure}</p>
 
             <Link to={`/purchase-food/${id}`}>
-              <button className="purchase-food-button px-12 py-3 mt-5 inline-block font-bold rounded-[5px] text-white bg-primaryColor border border-primaryColor transition-all duration-300 hover:border-primaryColorHover hover:bg-primaryColorHover">
+              <button className="px-12 py-3 inline-block rounded-[5px] text-primaryColor border border-primaryColor transition-all duration-300 hover:bg-primaryColor hover:border-primaryColor hover:text-white mt-1 md:mt-3 font-bold">
                 Purchase
               </button>
             </Link>
