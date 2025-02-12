@@ -64,11 +64,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 ">
       <div
-        className={`w-11/12 mx-auto px-6 py-2 shadow bg-white dark:bg-gray-800 mt-3 transition-all duration-300 rounded-[15px] ${
+        className={`px-6 py-2 shadow bg-white dark:bg-gray-800 mt-3 transition-all duration-300 rounded-[15px]X ${
           isScrolled ? "scroll-menu" : ""
         }`}
       >
-        <div className="lg:flex lg:items-center lg:justify-between">
+        <div className="w-11/12 md:w-9/12 mx-auto lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <button onClick={handleLogoClick}>
               <img className="w-auto h-6 sm:h-7" src={logo} alt="Logo" />
