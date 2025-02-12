@@ -103,6 +103,19 @@ const AllFoodItems = ({ isHomepage }) => {
             >
               View All Foods
             </Link>
+            {/* <Link
+              to="/all-foods"
+              className="px-12 py-3 inline-block rounded-[5px] text-black bg-primaryColor border border-primaryColor transition-all duration-300 hover:border-white hover:bg-transparent hover:text-white"
+            >
+              View All Foods
+            </Link> */}
+
+            <Link
+              to="/all-foods"
+              className="px-12 py-3 border border-primaryColor text-primaryColor rounded-[5px] font-bold transition-bg duration-300 hover:bg-primaryColor hover:text-white"
+            >
+              View All Foods
+            </Link>
           </div>
         )}
       </section>
